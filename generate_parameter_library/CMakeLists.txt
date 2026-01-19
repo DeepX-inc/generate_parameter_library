@@ -1,11 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
 project(generate_parameter_library NONE)
 
-# find dependencies
+# Find dependencies
 find_package(ament_cmake REQUIRED)
 
-# This installs everything under:
-#   generate_parameter_library/cmake/ -> <prefix>/share/generate_parameter_library/cmake/
+# Export CMake helper modules for downstream packages.
 install(
   DIRECTORY cmake
   DESTINATION share/${PROJECT_NAME}
