@@ -25,7 +25,7 @@ generate_parameter_library_generate_python_module(
   [VALIDATION_MODULE <python.import.path>]
   [OUT_DIR <build_output_dir>]
 )
-````
+```
 
 ### Behavior
 
