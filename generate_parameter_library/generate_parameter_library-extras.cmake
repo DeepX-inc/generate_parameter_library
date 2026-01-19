@@ -36,6 +36,5 @@ find_package(tl_expected REQUIRED)
 
 include("${generate_parameter_library_DIR}/generate_parameter_library.cmake")
 
-# Expose the Python codegen helper function to downstream packages that call:
-#   find_package(generate_parameter_library REQUIRED)
+# Downstream helper: generate/install Python modules from *.ros.schema.
 include("${generate_parameter_library_DIR}/generate_parameter_library_py_codegen.cmake")
